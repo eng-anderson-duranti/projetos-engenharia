@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      background-color: rgb(246, 246, 246); /* Background alterado para rgb(246, 246, 246) */
+      color: #333; /* Cor do texto */
+    }
+
+
+
+    .top-bar {
+      background-color: #333; /* Cor de fundo do top-bar alterada para um tom mais escuro */
+      color: #fff;
+      padding: 5px;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      font-size: 14px;
+    }
+
+    .top-bar span {
+      display: inline-block;
+      animation: marquee var(--velocidade) linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+     /* Logo */
+     .logo {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    h3{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      color: #a5a5a5;
+      margin: 1px;
+      font-weight: 470;
+    }
+
+    .logo img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .linha-topbar {
+      position: absolute;
+      width: 100%;
+      border-bottom: 1px solid #fff; /* Cor da linha alterada para branco */
+      top: 100%;
+      z-index: -1; /* A linha fica atrás do texto no top-bar */
+    }
+
+    .logo-container {
+      text-align: center;
+      margin-top: 25px; /* Ajustado para maior espaço entre a barra e a imagem */
+      position: relative;
+    }
+
+    .logo-img {
+      max-width: 85%; /* Ajustado para 60% da largura da tela */
+      height: auto;
+      display: block; /* Centraliza a imagem */
+      margin: 0 auto; /* Centraliza a imagem */
+    }
+
+    .linha-logo {
+      position: absolute;
+      width: 100%;
+      border-bottom: 2.3px solid #333333b2; /* Cor da linha alterada para escuro */
+      top: 100%;
+      z-index: -1; /* A linha fica atrás do texto no top-bar */
+      margin-top: 12.5px;
+    }
+
+    .projetos-realizados {
+      text-align: center;
+      font-size: 25px;
+      margin-top: 27px;
+      font-weight: bolder; /* Adicionado negrito */
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      color: #ffffff00;
+      padding: 5px;
+      border-radius: 50%;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0);
+      text-align: center;
+      font-size: 10px;
+      cursor: pointer;
+    }
+    .whatsapp-img {
+      max-width: 10px; /* Ajuste o tamanho conforme necessário */
+      height: auto;
+      width: 300px;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .projeto {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+
+    .projeto-img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 0px;
+      display: block; /* Centraliza a imagem */
+      margin: 0 auto; /* Centraliza a imagem */
+    }
+
+    .projeto-titulo {
+      margin-top: 50px;
+      font-size: 17.4px; /* Tamanho do título aumentado */
+    }
+
+    .projeto-link {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .contato a {
+      display: block;
+      margin-bottom: 10px;
+    }
+ 
+    a{
+      color: white;
+   
+    }
+
+    .contato {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+
+    .contato a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .contato a[href*="whatsapp"] img {
+      max-width: 40px; /* Ajuste o tamanho conforme necessário */
+    }
+
+    .whatsapp-btn img {
+      max-width: 50px; /* Ajuste o tamanho conforme necessário */
+      height: auto;
+      border-radius: 70px;
+      image-rendering: auto;
+    }
+    
+    .ver-projeto-btn {
+      background-color: #333; /* Cor de fundo do botão ajustada para azul */
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      font-size: 14px;
+      border-radius: 2px;
+      display: block;
+      margin-top: 10px;
+      width: 72.5%; /* Ajustado para 72% da largura da imagem */
+      margin: 0 auto; /* Centraliza o botão */
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <span id="textoTopBar">GERENCIAMENTO DE OBRAS | PROJETOS RESIDENCIAIS E COMERCIAIS | LAUDOS TÉCNICOS E REGULARIZAÇÕES</span>
+    <div class="linha-topbar"></div>
+  </div>
+
+  <div class="logo-container">
+    <img class="logo-img" src="img.img/IMG/LOGO ENG.jpg" alt="Logo da empresa"> <!-- Alterado para JPG -->
+    <h3>CREA: 5070832225</h3>
+    <div class="linha-logo"></div>
+  </div>
+
+ 
+
+  <div class="projeto">
+    <h2 class="projeto-titulo">CONSTRUÇÃO COMERCIAL</h2>
+    <img class="projeto-img" src="img.img/IMG2/ADVOGACIA-LOGO.jpg" alt="Imagem do Projeto ADVOGACIA">
+    <a class="ver-projeto-btn" href="advocacia.html">VER PROJETO</a>
+  </div>
+
+  <!-- Projeto 2 -->
+  <div class="projeto">
+    <h2 class="projeto-titulo">CONSTRUÇÃO RESIDENCIAL</h2>
+    <img class="projeto-img" src="img.img/IMG2/PORTAL-DAS-BORBOLETAS-LOGO.jpg" alt="Imagem do Projeto PORTAL DAS BORBOLETAS"> <!-- Alterado para JPG -->
+    <a class="ver-projeto-btn" href="residencial.html">VER PROJETO</a>
+  </div>
+
+  <!-- Projeto 4 -->
+  <div class="projeto">
+    <h2 class="projeto-titulo">CONSTRUÇÃO INDUSTRIAL</h2>
+    <img class="projeto-img" src="img.img/IMG2/SILO-LOGO.jpg" alt="Imagem do Projeto SILO"> <!-- Alterado para JPG -->
+    <a class="ver-projeto-btn" href="industrial.html">VER PROJETO</a>
+  </div>
+
+   <!-- Projeto 5 -->
+   <div class="projeto">
+    <h2 class="projeto-titulo">LAUDOS</h2>
+    <img class="projeto-img" src="img.img/IMG/LAUDOS.png" alt="Imagem do Projeto SILO"> <!-- Alterado para JPG -->
+    <a class="ver-projeto-btn" href="laudos.html">VER LAUDOS</a>
+  </div>
+
+  <!-- Projeto 6 -->
+  <div class="projeto">
+    <h2 class="projeto-titulo">PLANTAS</h2>
+    <img class="projeto-img" src="img.img/IMG/PLANTAS-1.png.jpg" alt="Imagem de uma planta de casa"> <!-- Alterado para JPG -->
+    <a class="ver-projeto-btn" href="plantas.html">VER PLANTAS</a>
+  </div>
+
+  <!-- Botão WhatsApp -->
+  <div class="whatsapp-btn" onclick="window.location.href='https://api.whatsapp.com/message/QYZDCFXNY4NUC1?autoload=1&app_absent=0'">
+    <img src="img.img/IMG/zap-logo.png" alt="">
+  </div>
+
+  <p>
+
+    <div class="top-bar">
+      Desenvolvido por <a href="https://www.instagram.com/duranti019/">Igor Duranti</a>
+    </div>
+
+  </p>
+
+  <script>
+    document.documentElement.style.setProperty('--velocidade', '13s'); /* Ajustado para 10 segundos */
+</script>
+
+</div>
+</div>
+</body>
+</html>
